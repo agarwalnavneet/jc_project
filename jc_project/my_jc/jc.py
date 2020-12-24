@@ -116,6 +116,8 @@ class ActionProcessor():
                     res = -1
                     break
             else:
+                if token == None:
+                    token = ' '
                 self.err_msg = 'syntax error: expecting "' + t + '" received "' + token + '"'
                 res = -1
                 break
